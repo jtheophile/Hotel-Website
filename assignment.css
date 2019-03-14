@@ -1,16 +1,41 @@
-.nav-bar {
-    color:white;
-    list-style: none;
-    margin: 0;
-    padding: 10px; 
-    background: #585858; 
+* {
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+}
+/* rules for the whole text */
+a {
+    text-decoration: none;
+}
+/* Log right */
+.logo {
+    background: grey;
+    color: white;
+    float: left;
+    list-style-type: none;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px
+}
+
+/* nav bar */
+.nav {
+
+    background: grey;
+    color: white;
     overflow: auto;
     float: left;
-    text-decoration: none;
-    align-content: left;
-    float: left;
-    
+    font: 16px; 
+    padding: 10px;
+
+
+nav ul {
+    float: right; 
 }
+    
+nav a {
+        color: white
+        }
 
 .main {
     background-image: url("images/showcase.jpg");
