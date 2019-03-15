@@ -1,55 +1,63 @@
+/* reformat doc */
 * {
     box-sizing: border-box;
     margin: 0; 
     padding: 0;
 }
-/* rules for the whole text */
-a {
+
+/* rules for the doc */
+* {
     text-decoration: none;
-}
-/* Log right */
-.logo {
-    background: grey;
-    color: white;
-    float: left;
     list-style-type: none;
-    text-decoration: none;
-    padding: 10px;
-    margin: 10px
-}
+    }
 
-/* nav bar */
-.nav {
-
-    background: grey;
-    color: white;
+/* Nav bar */
+nav {
+    background: #333;
     overflow: auto;
-    float: left;
-    font: 16px; 
-    padding: 10px;
+    }
 
+nav a {
+        color: white;
+    }
+
+nav h1 {
+    float: left;
+    padding: 15px;
+}
 
 nav ul {
-    float: right; 
-}
-    
-nav a {
-        color: white
-        }
-
-.main {
-    background-image: url("images/showcase.jpg");
-    background-image: scroll;
-    color: red;
-
-
+    float: right;
+    list-style: none;
+    padding: 15px;
 }
 
-
-
-.amen {
-    color:red;
+.navbar {
+    max-width:1100px;
+    margin: auto;
+    padding: 10;
+    overflow: auto;
 }
 
+nav ul li { 
+    float: left;  
+}
 
-////////
+  
+nav ul li a {
+    display: block;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul li a.current, nav ul li a:hover {
+    background: #444;
+    color: #f7c08a; 
+}
+    /* showcase */
+#showcase {
+    background-image: url("showcase.jpg");
+    height: 600px;
+    background-size: cover;
+    background-position: center center;
+}
